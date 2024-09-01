@@ -1,0 +1,146 @@
+.projects-section {
+  padding: 60px 20px;
+}
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+  h3{
+    font-size: 3rem;
+  }
+
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tags button.active,
+.tags button:hover {
+  background-color: $orange;
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-card {
+  // background: #fff;
+  // border-radius: 10px;
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 8/6;
+  object-fit: cover;
+  object-position: top;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.project-details {
+    margin-top: 1rem;
+//   padding: 20px;
+}
+
+.project-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: $orange;
+}
+.project-links a:hover {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+    color: $orange;
+    transition: all .2s ease-in-out;
+  }
+
+.project-tags {
+  margin-top: 10px;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  //   background-color: #f0f0f0;
+  //   padding: 5px 10px;
+  color: $orange;
+  border-radius: 5px;
+  margin-right: .5rem;
+  font-size: 12px;
+}
+
+.show-more-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    .show-more-button {
+        background-color: $orange;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all .2s ease-in-out;
+      }
+      
+      .show-more-button:hover {
+        background-color: #e76b00;
+      }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,86 @@
+// src/styles/colors.scss
+
+// Color Variables
+$orange: #ff7f00;
+$black: #1f1f1f;
+$white: #ffffff;
+$pitchBlck: black;
+
+// Mixins for Background and Text Colors with Transition
+@mixin background-color($color) {
+  background-color: $color;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@mixin text-color($color) {
+  color: $color;
+  transition: color 0.2s ease-in-out;
+}
+
+// Background color classes
+.bg-orange {
+  @include background-color($orange);
+}
+
+.bg-black {
+  @include background-color($black);
+}
+
+.bg-white {
+  @include background-color($white);
+}
+
+// Text color classes
+.text-orange {
+  @include text-color($orange);
+}
+
+.text-black {
+  @include text-color($black);
+}
+
+.text-white {
+  @include text-color($white);
+
+
+
+  
+}
+
+
+/* Font weight utility classes */
+.fw-100 {
+    font-weight: 100;
+  }
+  
+  .fw-200 {
+    font-weight: 200;
+  }
+  
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .fw-400 {
+    font-weight: 400;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .fw-600 {
+    font-weight: 600;
+  }
+  
+  .fw-700 {
+    font-weight: 700;
+  }
+  
+  .fw-800 {
+    font-weight: 800;
+  }
+  
+  .fw-900 {
+    font-weight: 900;
+  }

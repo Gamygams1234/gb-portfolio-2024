@@ -1,0 +1,145 @@
+/* src/components/About.css */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+ 
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .about-content {
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  .greeting {
+    font-size: 1.2rem;
+   
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    color: $orange;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    
+    margin-bottom: 20px;
+    height: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    // color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .btn-hire-me {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-hire-me:hover {
+    background-color: #e76b00;
+  }
+  
+  .about-image {
+    position: relative;
+    max-width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-image img {
+
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ff7f00;
+  }
+
+  .dark{
+    .social-links a {
+        color: $white;
+
+      }
+
+      .social-links a:hover {
+        color: $orange;
+
+      }
+      
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content {
+      margin-bottom: 40px;
+    }
+  
+    .about-image img {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .name {
+      font-size: 2rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .btn-hire-me {
+      font-size: 0.9rem;
+    }
+  }
+  

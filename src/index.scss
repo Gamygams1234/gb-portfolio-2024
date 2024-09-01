@@ -1,0 +1,72 @@
+/* Resetting margins, paddings, and borders for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove the default border and background for buttons and form elements */
+button, input, textarea, select {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure images and videos fit within their containers */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove text decoration and color for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Set base font styles */
+html {
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set body defaults */
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove all outlines */
+*:focus {
+  outline: none;
+}
+
+/* Set basic table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Ensure form elements inherit font */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Normalize the box-sizing for pseudo-elements */
+*::before, *::after {
+  box-sizing: inherit;
+}

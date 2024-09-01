@@ -1,0 +1,185 @@
+/* src/components/Header.css */
+
+.dark-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  //   background-color: #fff;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  top: 0;
+  z-index: 1000;
+}
+.header a {
+  display: inline-block; /* This keeps the link dimensions stable */
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: letter-spacing 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 5px 0; /* Add padding to increase click area without affecting layout */
+  position: relative; /* Required for pseudo-element trick below */
+}
+
+.header {
+  .nav-link:hover {
+    transform: scaleX(1.2); /* Scales the text horizontally without affecting its height */
+    color: #ff7f00; /* Optional: change color on hover */
+  }
+}
+
+// .header a::after {
+//     content: attr(data-hover); /* Use the link text as the content */
+//     visibility: hidden; /* Hide the pseudo-element from view */
+//     height: 0;
+//     display: block;
+//     white-space: pre; /* Preserve the spaces between characters */
+//     letter-spacing: 3px; /* Match this with the hover letter-spacing */
+//   }
+.header a {
+  transition: 0.2s ease-in-out all;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: $black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+}
+
+.download-cv .btn-download {
+  background-color: #ff7f00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+.header .btn-download:hover {
+  letter-spacing: normal; /* Adjust this value as needed */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.dark {
+  .nav-menu a {
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .download-cv {
+    display: none; /* Hide the download button on small screens */
+  }
+
+  /* Basic styling for the hamburger menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 34px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Styling when the menu is open - transforms hamburger to an X */
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 5% 50%;
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 5% 50%;
+  }
+
+  .dark {
+    .nav-menu {
+      background-color: $pitchBlck;
+    }
+
+    .hamburger {
+      .bar {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
