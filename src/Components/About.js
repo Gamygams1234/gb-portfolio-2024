@@ -54,7 +54,7 @@ const About = () => {
           <h1 className="name">Gamaliel Burgos</h1>
           <h2 className="title">{currentTitle}</h2>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra.
+          I'm a Software Engineer with a passion for bringing innovative web experiences to life. With a keen eye for design and a love for clean, efficient code, I thrive on creating interfaces that are not only visually appealing but also intuitive and user-friendly. 
           </p>
           <button className="btn-hire-me">Hire Me</button>
         </div>
@@ -62,9 +62,9 @@ const About = () => {
           <img src={profileImage} alt="Gamaliel Burgos" />
           <div className="social-links">
             {/* <a href="#!"><i className="fab fa-facebook-f"></i></a> */}
-            <a href="#!"><i className="fab fa-github"></i></a>
-            <a href="#!"><i className="fab fa-instagram"></i></a>
-            <a href="#!"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Gamygams1234" target="_blank"><i className="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/gamycodes/" target="_blank"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gamailelburgos/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>

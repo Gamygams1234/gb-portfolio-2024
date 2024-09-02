@@ -19,7 +19,7 @@ const AboutMe = () => {
         <div className="about-me-content text-black" data-aos="fade-left">
           <h2>About Me</h2>
           <p>
-            Hey there! I'm a passionate developer who loves crafting engaging and interactive web experiences. Whether it's designing a sleek interface or writing clean, efficient code, I'm always up for a challenge. When I'm not coding, you can find me exploring new tech trends, binge-watching my favorite series, or trying out the latest coffee blend. Let's create something amazing together!
+          Whether it's building responsive websites or tackling complex problems, I’m always ready for the next challenge. When I'm not immersed in coding, you'll likely find me exploring new tech trends, experimenting with the latest JavaScript frameworks, or perfecting a CSS animation. But there's more to me than just code—I’m also a huge fan of skating, and I never miss a chance to adventure the outdoors. Let’s connect and create something extraordinary together!
           </p>
         </div>
       </div>

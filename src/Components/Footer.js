@@ -30,13 +30,13 @@ const Footer = (props) => {
           <a href="#contact">Contact</a>
         </nav>
         <div className="footer-social">
-          <a href="#!">
+          <a href="https://github.com/Gamygams1234"  target="_blank">
             <i className="fab fa-github"></i>
           </a>
-          <a href="#!">
+          <a href="https://www.instagram.com/gamycodes/" target="_blank">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#!">
+          <a href="https://www.linkedin.com/in/gamailelburgos/" target="_blank">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </div>
