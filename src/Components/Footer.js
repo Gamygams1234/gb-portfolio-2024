@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import whiteProfile from "../assets/images/logoWhite.svg";
 import profileImage from "../assets/images/logo.svg";
 
-
 const Footer = (props) => {
   const { darkMode } = props;
   useEffect(() => {
@@ -22,15 +21,14 @@ const Footer = (props) => {
           {darkMode ? <img src={whiteProfile} alt="Logo" /> : <img src={profileImage} alt="Logo" />}
         </div>
         <nav className="footer-nav" data-aos="fade-in">
-          <a href="#home">Home</a>
           <a href="#about">About Me</a>
-          <a href="#services">Services</a>
+
           <a href="#projects">Projects</a>
-          <a href="#testimonials">Testimonials</a>
+
           <a href="#contact">Contact</a>
         </nav>
         <div className="footer-social">
-          <a href="https://github.com/Gamygams1234"  target="_blank">
+          <a href="https://github.com/Gamygams1234" target="_blank">
             <i className="fab fa-github"></i>
           </a>
           <a href="https://www.instagram.com/gamycodes/" target="_blank">

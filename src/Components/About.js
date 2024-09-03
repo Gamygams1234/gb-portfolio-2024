@@ -56,7 +56,7 @@ const About = () => {
           <p className="description">
           I'm a Software Engineer with a passion for bringing innovative web experiences to life. With a keen eye for design and a love for clean, efficient code, I thrive on creating interfaces that are not only visually appealing but also intuitive and user-friendly. 
           </p>
-          <button className="btn-hire-me">Hire Me</button>
+          <a href="#contact" className="btn-hire-me">Contact Me</a>
         </div>
         <div className="about-image">
           <img src={profileImage} alt="Gamaliel Burgos" />
