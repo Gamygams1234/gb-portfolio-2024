@@ -47,13 +47,13 @@ export const data = [
     image: require("./assets/images/projects/imposter.png"),
     tags: ["Game"],
   },
-  {
-    name: "REST Countries API",
-    liveView: "https://rest-countries-gb.netlify.app",
-    rating: 4,
-    image: require("./assets/images/projects/countries.jpg"),
-    tags: ["API"],
-  },
+  // {
+  //   name: "REST Countries API",
+  //   liveView: "https://rest-countries-gb.netlify.app",
+  //   rating: 4,
+  //   image: require("./assets/images/projects/countries.jpg"),
+  //   tags: ["API"],
+  // },
   {
     name: "Memory",
     liveView: "https://gb-memory-game-ga.netlify.app/",
@@ -64,7 +64,7 @@ export const data = [
   },
   {
     name: "Devjobs",
-    liveView: "https://gb-devjobs.netlify.app/",
+    liveView: "https://devjobs-front.netlify.app/",
     githubLink: "https://github.com/Gamygams1234/devjobs-front",
     rating: 4.5,
     image: require("./assets/images/projects/devjobs.jpg"),
